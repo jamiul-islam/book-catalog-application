@@ -9,8 +9,7 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-const uri =
-  "mongodb+srv://lucifer1112k:0.Lucifer.0@cluster0.wohac.mongodb.net/?retryWrites=true&w=majority";
+const uri = `mongodb+srv://${process.env.MONGODB_ID}:${process.env.MONGODB_PASSWORD}@cluster0.wohac.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -29,7 +28,7 @@ const run = async () => {
       res.send({ status: true, data: books });
     });
   } finally {
-    await client.close();
+    // await client.close();
   }
 };
 
