@@ -7,7 +7,7 @@ interface IProduct {
 
 const initialState: IProduct = {
   status: false,
-  filterYear: 2023,
+  filterYear: 2030,
 };
 
 const productSlice = createSlice({
