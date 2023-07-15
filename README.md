@@ -9,8 +9,8 @@
 
 ##### login page
 
-- navigation bar fix
-- login/signUp page
+- navigation bar fix - DONE
+- login/signUp page - DONE
 
 ##### landing page
 
