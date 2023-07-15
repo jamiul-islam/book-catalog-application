@@ -14,5 +14,10 @@
 
 ##### landing page
 
+- random 10 data
+
+##### all books page
+
 - store --> data --> UI
+- dynamic search
 - filtering using regex
