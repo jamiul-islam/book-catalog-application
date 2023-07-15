@@ -18,7 +18,7 @@ const client = new MongoClient(uri, {
 
 const run = async () => {
   try {
-    const db = client.db("book-collection");
+    const db = client.db("book-catalog");
     const bookCollection = db.collection("books");
 
     app.get("/books", async (req, res) => {

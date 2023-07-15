@@ -5,7 +5,7 @@
     "image": "https://m.media-amazon.com/images/I/518dVCGFuhL._SX323_BO1,204,203,200_.jpg",
     "author": "J.D. Salinger",
     "genre": "Fiction",
-    "publication-date": "July 16, 1951",
+    "publicationDate": "July 16, 1951",
     "reviews": []
   },
   {
@@ -14,7 +14,7 @@
     "image": "https://m.media-amazon.com/images/I/51IXWZzlgSL._SX330_BO1,204,203,200_.jpg",
     "author": "Harper Lee",
     "genre": "Fiction",
-    "publication-date": "July 11, 1960",
+    "publicationDate": "July 11, 1960",
     "reviews": []
   },
   {
@@ -23,7 +23,7 @@
     "image": "https://m.media-amazon.com/images/I/51ki8oVZEUL._SX331_BO1,204,203,200_.jpg",
     "author": "George Orwell",
     "genre": "Fiction",
-    "publication-date": "June 8, 1949",
+    "publicationDate": "June 8, 1949",
     "reviews": []
   },
   {
@@ -32,7 +32,7 @@
     "image": "https://m.media-amazon.com/images/I/41BiT3sOQBL._SX322_BO1,204,203,200_.jpg",
     "author": "F. Scott Fitzgerald",
     "genre": "Fiction",
-    "publication-date": "April 10, 1925",
+    "publicationDate": "April 10, 1925",
     "reviews": []
   },
   {
@@ -41,7 +41,7 @@
     "image": "https://m.media-amazon.com/images/I/51tiZ05vxNL.jpg",
     "author": "Jane Austen",
     "genre": "Fiction",
-    "publication-date": "January 28, 1813",
+    "publicationDate": "January 28, 1813",
     "reviews": []
   },
   {
@@ -50,7 +50,7 @@
     "image": "https://m.media-amazon.com/images/I/91ViLCn5AgL._SL1500_.jpg",
     "author": "J.R.R. Tolkien",
     "genre": "Fantasy",
-    "publication-date": "September 21, 1937",
+    "publicationDate": "September 21, 1937",
     "reviews": []
   },
   {
@@ -59,7 +59,7 @@
     "image": "https://m.media-amazon.com/images/I/51MnBaafASL._SX423_BO1,204,203,200_.jpg",
     "author": "J.K. Rowling",
     "genre": "Fantasy",
-    "publication-date": "June 26, 1997",
+    "publicationDate": "June 26, 1997",
     "reviews": []
   },
   {
@@ -68,7 +68,7 @@
     "image": "https://m.media-amazon.com/images/I/41C34DME2eL._SX323_BO1,204,203,200_.jpg",
     "author": "J.R.R. Tolkien",
     "genre": "Fantasy",
-    "publication-date": "July 29, 1954",
+    "publicationDate": "July 29, 1954",
     "reviews": []
   },
   {
@@ -77,7 +77,7 @@
     "image": "https://m.media-amazon.com/images/I/51p1WxfBJAL._SX329_BO1,204,203,200_.jpg",
     "author": "C.S. Lewis",
     "genre": "Fantasy",
-    "publication-date": "October 16, 1950",
+    "publicationDate": "October 16, 1950",
     "reviews": []
   },
   {
@@ -86,7 +86,7 @@
     "image": "https://m.media-amazon.com/images/I/51J0Go2ZCNL._SX329_BO1,204,203,200_.jpg",
     "author": "Dan Brown",
     "genre": "Mystery",
-    "publication-date": "March 18, 2003",
+    "publicationDate": "March 18, 2003",
     "reviews": []
   },
   {
@@ -95,7 +95,7 @@
     "image": "https://m.media-amazon.com/images/I/41Q+tvfP44L.jpg",
     "author": "Gillian Flynn",
     "genre": "Mystery",
-    "publication-date": "June 5, 2012",
+    "publicationDate": "June 5, 2012",
     "reviews": []
   },
   {
@@ -104,7 +104,7 @@
     "image": "https://m.media-amazon.com/images/I/51XhEKidM3L.jpg",
     "author": "Stieg Larsson",
     "genre": "Mystery",
-    "publication-date": "August 2005",
+    "publicationDate": "August 2005",
     "reviews": []
   },
   {
@@ -113,7 +113,7 @@
     "image": "https://m.media-amazon.com/images/I/51RpkO1J0lL._SX328_BO1,204,203,200_.jpg",
     "author": "Suzanne Collins",
     "genre": "Young Adult",
-    "publication-date": "September 14, 2008",
+    "publicationDate": "September 14, 2008",
     "reviews": []
   },
   {
@@ -122,7 +122,7 @@
     "image": "https://m.media-amazon.com/images/I/51YIcGCYtxL._SX330_BO1,204,203,200_.jpg",
     "author": "Veronica Roth",
     "genre": "Young Adult",
-    "publication-date": "April 25, 2011",
+    "publicationDate": "April 25, 2011",
     "reviews": []
   },
   {
@@ -131,7 +131,7 @@
     "image": "https://m.media-amazon.com/images/I/51ED6WxFy8L._SX335_BO1,204,203,200_.jpg",
     "author": "John Green",
     "genre": "Young Adult",
-    "publication-date": "January 10, 2012",
+    "publicationDate": "January 10, 2012",
     "reviews": []
   },
   {
@@ -140,7 +140,7 @@
     "image": "https://m.media-amazon.com/images/I/518qiLwlQ0L._SX427_BO1,204,203,200_.jpg",
     "author": "Paulo Coelho",
     "genre": "Self-Help",
-    "publication-date": "1988",
+    "publicationDate": "1988",
     "reviews": []
   }
 ]
