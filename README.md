@@ -1,1 +1,1 @@
-# book-catalog-application
+# Book Catalog Application

@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 9000;
 
 const cors = require("cors");
 
@@ -36,7 +36,7 @@ const run = async () => {
 run().catch((err) => console.log(err));
 
 app.get("/", (req, res) => {
-  res.send("Book Catalog Api");
+  res.send("Welcome to Book Catalog Api");
 });
 
 app.listen(port, () => {
