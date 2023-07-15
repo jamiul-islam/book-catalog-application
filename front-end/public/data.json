@@ -1,96 +1,146 @@
 [
   {
-    "_id": 1,
-    "name": "Haylou GST",
-    "image": "https://live.staticflickr.com/65535/52953899202_478089ea5f_h.jpg",
-    "price": 31.99,
-    "features": [
-      "1.69'' HD display",
-      "Support 12 workout modes",
-      "Support all-day heart rate and blood oxygen monitoring",
-      "Support intelligent sleep monitoring",
-      "IP68 dustproof and waterproof",
-      "20 days of battery life"
-    ],
-    "status": true,
-    "rating": 4
+    "id": 1,
+    "title": "The Catcher in the Rye",
+    "image": "https://m.media-amazon.com/images/I/518dVCGFuhL._SX323_BO1,204,203,200_.jpg",
+    "author": "J.D. Salinger",
+    "genre": "Fiction",
+    "publication-date": "July 16, 1951",
+    "reviews": []
   },
   {
-    "_id": 2,
-    "name": "Haylou GS",
-    "image": "https://live.staticflickr.com/65535/52954632614_2db2bed3a7_h.jpg",
-    "price": 32.38,
-    "features": [
-      "38g compact body, more comfortable to wear",
-      "Support 12 workout modes",
-      "Support SpO₂ tracking and heart rate monitoring",
-      "Support smart sleep monitoring",
-      "IP68 dustproof and waterproof",
-      "20-day battery life"
-    ],
-    "status": false,
-    "rating": 3
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "image": "https://m.media-amazon.com/images/I/51IXWZzlgSL._SX330_BO1,204,203,200_.jpg",
+    "author": "Harper Lee",
+    "genre": "Fiction",
+    "publication-date": "July 11, 1960",
+    "reviews": []
   },
   {
-    "_id": 3,
-    "name": "Haylou Solar Plus RT3",
-    "image": "https://live.staticflickr.com/65535/52953899127_38e776f3f7_h.jpg",
-    "price": 48.79,
-    "features": [
-      "Bluetooth 5.2, worry-free communication made easy",
-      "Precise and clear experience with 1.43\" Amoled display",
-      "5d looking level-up, exquisite metal bezel",
-      "Always-on display, conf_ident time control",
-      "Versatile watch faces, support customize watch face"
-    ],
-    "status": true,
-    "rating": 5
+    "id": 3,
+    "title": "1984",
+    "image": "https://m.media-amazon.com/images/I/51ki8oVZEUL._SX331_BO1,204,203,200_.jpg",
+    "author": "George Orwell",
+    "genre": "Fiction",
+    "publication-date": "June 8, 1949",
+    "reviews": []
   },
   {
-    "_id": 4,
-    "name": "Haylou RT2",
-    "image": "https://live.staticflickr.com/65535/52954494936_efd69e2df9_h.jpg",
-    "price": 38.99,
-    "features": [
-      "360*360 high resolution display",
-      "Support 12 workout modes",
-      "Support all-day heart rate and blood oxygen monitoring",
-      "Support intelligent sleep monitoring",
-      "20 days of battery life"
-    ],
-    "status": true,
-    "rating": 2
+    "id": 4,
+    "title": "The Great Gatsby",
+    "image": "https://m.media-amazon.com/images/I/41BiT3sOQBL._SX322_BO1,204,203,200_.jpg",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "publication-date": "April 10, 1925",
+    "reviews": []
   },
   {
-    "_id": 5,
-    "name": "Haylou RS4 Plus",
-    "image": "https://live.staticflickr.com/65535/52953899137_072c5c4ffc_h.jpg",
-    "price": 54.84,
-    "features": [
-      "1.78'' AMOLED HD display",
-      "60HZ refresh rate, smooth and delicate picture quality",
-      "Support 105 workout modes",
-      "Support multi-UI main menu mode",
-      "Support all-day heart rate and blood oxygen monitoring",
-      "Support Alipay offline payment"
-    ],
-    "status": false,
-    "rating": 4
+    "id": 5,
+    "title": "Pride and Prejudice",
+    "image": "https://m.media-amazon.com/images/I/51tiZ05vxNL.jpg",
+    "author": "Jane Austen",
+    "genre": "Fiction",
+    "publication-date": "January 28, 1813",
+    "reviews": []
   },
   {
-    "_id": 6,
-    "name": "Haylou RS3",
-    "image": "https://live.staticflickr.com/65535/52953899132_fead48e579_h.jpg",
-    "price": 63.07,
-    "features": [
-      "1.2'' AMOLED HD display",
-      "Support 14 workout modes",
-      "Support all-day heart rate and blood oxygen monitoring",
-      "SONY GPS, accurate positioning of movement trajectory",
-      "5ATM waterproof",
-      "21 days of battery life"
-    ],
-    "status": true,
-    "rating": 5
+    "id": 6,
+    "title": "The Hobbit",
+    "image": "https://m.media-amazon.com/images/I/91ViLCn5AgL._SL1500_.jpg",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "publication-date": "September 21, 1937",
+    "reviews": []
+  },
+  {
+    "id": 7,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "image": "https://m.media-amazon.com/images/I/51MnBaafASL._SX423_BO1,204,203,200_.jpg",
+    "author": "J.K. Rowling",
+    "genre": "Fantasy",
+    "publication-date": "June 26, 1997",
+    "reviews": []
+  },
+  {
+    "id": 8,
+    "title": "The Lord of the Rings",
+    "image": "https://m.media-amazon.com/images/I/41C34DME2eL._SX323_BO1,204,203,200_.jpg",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "publication-date": "July 29, 1954",
+    "reviews": []
+  },
+  {
+    "id": 9,
+    "title": "The Chronicles of Narnia",
+    "image": "https://m.media-amazon.com/images/I/51p1WxfBJAL._SX329_BO1,204,203,200_.jpg",
+    "author": "C.S. Lewis",
+    "genre": "Fantasy",
+    "publication-date": "October 16, 1950",
+    "reviews": []
+  },
+  {
+    "id": 10,
+    "title": "The Da Vinci Code",
+    "image": "https://m.media-amazon.com/images/I/51J0Go2ZCNL._SX329_BO1,204,203,200_.jpg",
+    "author": "Dan Brown",
+    "genre": "Mystery",
+    "publication-date": "March 18, 2003",
+    "reviews": []
+  },
+  {
+    "id": 11,
+    "title": "Gone Girl",
+    "image": "https://m.media-amazon.com/images/I/41Q+tvfP44L.jpg",
+    "author": "Gillian Flynn",
+    "genre": "Mystery",
+    "publication-date": "June 5, 2012",
+    "reviews": []
+  },
+  {
+    "id": 12,
+    "title": "The Girl with the Dragon Tattoo",
+    "image": "https://m.media-amazon.com/images/I/51XhEKidM3L.jpg",
+    "author": "Stieg Larsson",
+    "genre": "Mystery",
+    "publication-date": "August 2005",
+    "reviews": []
+  },
+  {
+    "id": 13,
+    "title": "The Hunger Games",
+    "image": "https://m.media-amazon.com/images/I/51RpkO1J0lL._SX328_BO1,204,203,200_.jpg",
+    "author": "Suzanne Collins",
+    "genre": "Young Adult",
+    "publication-date": "September 14, 2008",
+    "reviews": []
+  },
+  {
+    "id": 14,
+    "title": "Divergent",
+    "image": "https://m.media-amazon.com/images/I/51YIcGCYtxL._SX330_BO1,204,203,200_.jpg",
+    "author": "Veronica Roth",
+    "genre": "Young Adult",
+    "publication-date": "April 25, 2011",
+    "reviews": []
+  },
+  {
+    "id": 15,
+    "title": "The Fault in Our Stars",
+    "image": "https://m.media-amazon.com/images/I/51ED6WxFy8L._SX335_BO1,204,203,200_.jpg",
+    "author": "John Green",
+    "genre": "Young Adult",
+    "publication-date": "January 10, 2012",
+    "reviews": []
+  },
+  {
+    "id": 16,
+    "title": "The Alchemist",
+    "image": "https://m.media-amazon.com/images/I/518qiLwlQ0L._SX427_BO1,204,203,200_.jpg",
+    "author": "Paulo Coelho",
+    "genre": "Self-Help",
+    "publication-date": "1988",
+    "reviews": []
   }
 ]
