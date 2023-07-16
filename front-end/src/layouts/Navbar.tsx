@@ -9,7 +9,6 @@ import {
   DropdownMenuTrigger,
   DropdownMenuContent,
 } from '../components/ui/dropdown-menu';
-import { HiOutlineSearch } from 'react-icons/hi';
 import { useAppDispatch, useAppSelector } from '@/redux/hook';
 import { signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
