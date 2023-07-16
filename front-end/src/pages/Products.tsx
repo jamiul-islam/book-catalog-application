@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import ProductCard from '@/components/ProductCard';
 import { Slider } from '@/components/ui/slider';
 import { useGetProductsQuery } from '@/redux/features/products/productApi';
@@ -10,46 +9,52 @@ import { ChangeEvent, useEffect, useState } from 'react';
 export default function Products() {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState<IBook[]>([]);
+
+  // getting raw data
   const { data, isLoading } = useGetProductsQuery(undefined);
+
+  // getting year state and status of filter
   const { filterYear, status } = useAppSelector((state) => state.product);
   const dispatch = useAppDispatch();
-  let productsData: IBook[];
 
-  // filter data
+  // search state
+  const handleSlider = (value: number[]) => {
+    dispatch(setYearRange(value[0]));
+  };
+
+  // filtering data using slider
   useEffect(() => {
-    let filteredBooks: IBook[];
+    // initialize filterable data
+    let productsData: IBook[];
 
     if (status) {
-      filteredBooks = data?.data.filter(
+      productsData = data?.data?.filter(
         (item: { status: boolean; publicationDate: string }) =>
           item.status === true &&
           Number(item.publicationDate.slice(-4)) < filterYear
       );
     } else if (filterYear > 0) {
-      filteredBooks = data?.data?.filter(
+      productsData = data?.data?.filter(
         (item: { publicationDate: string }) =>
           Number(item.publicationDate.slice(-4)) < filterYear
       );
     } else {
-      filteredBooks = data?.data;
+      productsData = data?.data;
     }
 
-    setSearchResults(filteredBooks);
-  }, [data, filterYear, status]);
+    setSearchResults(productsData);
+  }, [status, filterYear, data]);
 
-  // slider handler
-  const handleSlider = (value: number[]) => {
-    dispatch(setYearRange(value[0]));
-  };
-
-  // search bar result
+  // getting search bar input
   const handleSearch = (event: ChangeEvent<HTMLInputElement>) => {
     const term = event.target.value;
+    console.log(term);
     setSearchTerm(term);
   };
 
+  // filtering data using search bar
   useEffect(() => {
-    const filteredBooks = searchResults.filter((book: IBook) => {
+    const filteredBooks = data?.data.filter((book: IBook) => {
       const { title, author, genre } = book;
       const lowerCaseTerm = searchTerm.toLowerCase();
       return (
@@ -60,7 +65,7 @@ export default function Products() {
     });
 
     setSearchResults(filteredBooks);
-  }, [searchTerm, searchResults]);
+  }, [searchTerm, data?.data]);
 
   return (
     <div className="grid grid-cols-12 max-w-7xl mx-auto relative ">

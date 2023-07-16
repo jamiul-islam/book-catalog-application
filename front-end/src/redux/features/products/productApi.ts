@@ -8,6 +8,14 @@ const productApi = api.injectEndpoints({
     singleProduct: builder.query({
       query: (id) => `/books/${id}`,
     }),
+    postBook: builder.mutation({
+      query: ({ data }) => ({
+        url: `/books`,
+        method: 'POST',
+        body: data,
+      }),
+      invalidatesTags: ['books'],
+    }),
     postReview: builder.mutation({
       query: ({ id, data }) => ({
         url: `/reviews/${id}`,
@@ -28,4 +36,5 @@ export const {
   useSingleProductQuery,
   usePostReviewMutation,
   useGetReviewQuery,
+  usePostBookMutation,
 } = productApi;

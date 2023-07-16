@@ -25,18 +25,18 @@ server link: <https://book-catalog-lucifer1112k.vercel.app>
 
 - store --> data --> UI - DONE
 - filtering using publish year - DONE
-- _dynamic search_
+- _dynamic search_ - DONE
 - single book page - DONE
 - write a review - DONE
 
 ##### CRUD
 
-- create a new book
+- create a book - DONE 
 - update a book
 - delete a book
 
 ##### wishlist
 
-- add to wishlist - DONE
+- add to wishlist - DONE - authorization
 - finished read - DONE
 - pending reading - DONE
