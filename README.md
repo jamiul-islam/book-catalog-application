@@ -21,9 +21,9 @@
 
 - store --> data --> UI - DONE
 - filtering using publish year - DONE
+- _dynamic search_
 - single book page
 - write a review
-- _dynamic search_
 
 ##### CRUD
 

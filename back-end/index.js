@@ -21,12 +21,22 @@ const run = async () => {
     const db = client.db("book-catalog");
     const bookCollection = db.collection("books");
 
+    // get all the books
     app.get("/books", async (req, res) => {
       const cursor = bookCollection.find({});
       const books = await cursor.toArray();
 
       res.send({ status: true, data: books });
     });
+
+    // get a single book
+    app.get("/books/:id", async (req, res) => {
+      const id = req.params.id;
+      const result = await bookCollection.findOne({ _id: ObjectId(id) });
+      res.send(result);
+    });
+
+    //
   } finally {
     // await client.close();
   }
