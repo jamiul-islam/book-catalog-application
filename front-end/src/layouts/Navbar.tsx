@@ -61,9 +61,6 @@ export default function Navbar() {
                   <DropdownMenuContent>
                     <DropdownMenuLabel>Account</DropdownMenuLabel>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem className="cursor-pointer">
-                      Profile
-                    </DropdownMenuItem>
                     {!user.email && (
                       <>
                         <Link to="/login">

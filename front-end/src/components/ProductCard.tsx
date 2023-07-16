@@ -2,7 +2,6 @@ import { Button } from './ui/button';
 import { Link } from 'react-router-dom';
 import { IBook } from '@/types/globalTypes';
 import { useAppDispatch } from '@/redux/hook';
-import { toast } from './ui/use-toast';
 import { addToCart } from '@/redux/features/cart/cartSlice';
 
 interface IProps {
@@ -14,9 +13,7 @@ export default function ProductCard({ product }: IProps) {
 
   const handleAddProduct = (product: IBook) => {
     dispatch(addToCart(product));
-    toast({
-      description: 'book added to wishlist',
-    });
+    alert('Added to wishlist');
   };
   return (
     <div>
