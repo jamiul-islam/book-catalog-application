@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useForm } from 'react-hook-form';
-import { useAppDispatch, useAppSelector } from '@/redux/hook';
+import { useAppSelector } from '@/redux/hook';
 
 import { useNavigate } from 'react-router-dom';
 

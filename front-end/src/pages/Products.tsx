@@ -48,7 +48,6 @@ export default function Products() {
   // getting search bar input
   const handleSearch = (event: ChangeEvent<HTMLInputElement>) => {
     const term = event.target.value;
-    console.log(term);
     setSearchTerm(term);
   };
 

@@ -74,7 +74,6 @@ const run = async () => {
     // add a book
     app.post("/books", async (req, res) => {
       const book = req.body;
-      console.log("book----------->", book);
 
       const result = await bookCollection.insertOne(book);
 
