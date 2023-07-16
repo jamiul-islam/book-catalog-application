@@ -36,7 +36,42 @@ const run = async () => {
       res.send(result);
     });
 
-    //
+    // create a review
+    app.post("/reviews/:id", async (req, res) => {
+      const productId = req.params.id;
+      const comment = req.body.comment;
+
+      const result = await bookCollection.updateOne(
+        { _id: ObjectId(productId) },
+        { $push: { reviews: comment } }
+      );
+
+      console.log(result);
+
+      if (result.modifiedCount !== 1) {
+        console.error("Product not found or comment not added");
+        res.json({ error: "Product not found or comment not added" });
+        return;
+      }
+
+      res.json({ message: "Comment added successfully" });
+    });
+
+    // get a review
+    app.get("/reviews/:id", async (req, res) => {
+      const productId = req.params.id;
+
+      const result = await bookCollection.findOne(
+        { _id: ObjectId(productId) },
+        { projection: { _id: 0, reviews: 1 } }
+      );
+
+      if (result) {
+        res.json(result);
+      } else {
+        res.status(404).json({ error: "Product not found" });
+      }
+    });
   } finally {
     // await client.close();
   }
