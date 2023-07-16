@@ -70,6 +70,43 @@ const run = async () => {
         res.status(404).json({ error: "Product not found" });
       }
     });
+
+    // add a book
+    app.post("/books", async (req, res) => {
+      const book = req.body;
+
+      const result = await bookCollection.insertOne(book);
+
+      res.send(result);
+    });
+
+    // delete a book
+    app.delete("/books/:id", async (req, res) => {
+      const id = req.params.id;
+      const result = await bookCollection.deleteOne({ _id: ObjectId(id) });
+      res.send(result);
+    });
+
+    // create a user
+    app.post("/user", async (req, res) => {
+      const user = req.body;
+      const result = await userCollection.insertOne(user);
+      res.send(result);
+    });
+
+    // get a user
+    app.get("/user/:email", async (req, res) => {
+      const email = req.params.email;
+      const result = await userCollection.findOne({ email });
+
+      if (result?.email) {
+        return res.send({ status: true, data: result });
+      }
+
+      res.send({ status: false });
+    });
+
+    //
   } finally {
     // await client.close();
   }
