@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="h-full w-full bg-white/60">
         <div className="flex items-center justify-between w-full md:max-w-7xl h-full mx-auto ">
           <div>
-            <h1>Book Catalog</h1>
+            <Link to="/">Book Catalog</Link>
           </div>
           <div>
             <ul className="flex items-center">

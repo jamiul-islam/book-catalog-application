@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
   const navigate = useNavigate();
-  const { data, isLoading, error } = useGetProductsQuery(undefined);
+  const { data, isLoading } = useGetProductsQuery(undefined);
 
   // show only 10 data in home
   const productsData = data?.data ? data?.data.slice(0, 10) : [];
@@ -30,12 +30,16 @@ export default function Home() {
           )}
         </div>
         <div className="pb-8">
-          <Button
-            onClick={gotToBooks}
-            className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow"
-          >
-            View All Books
-          </Button>
+          {isLoading ? (
+            <div></div>
+          ) : (
+            <Button
+              onClick={gotToBooks}
+              className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow"
+            >
+              View All Books
+            </Button>
+          )}
         </div>
       </div>
     </>

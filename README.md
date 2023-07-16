@@ -19,9 +19,11 @@
 
 ##### all books page
 
-- store --> data --> UI
-- filtering using regex
-- dynamic search
+- store --> data --> UI - DONE
+- filtering using publish year - DONE
+- single book page
+- write a review
+- _dynamic search_
 
 ##### CRUD
 
