@@ -35,7 +35,7 @@
 
 ##### wishlist
 
-- pending in product card --> button <--
+- --> button <-- add to wishlist helper function for cards and details page
 - future read
 - currently reading
 - bookmark icon --> finished
