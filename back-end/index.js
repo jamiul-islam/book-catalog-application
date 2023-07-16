@@ -39,22 +39,22 @@ const run = async () => {
     // create a review
     app.post("/reviews/:id", async (req, res) => {
       const productId = req.params.id;
-      const comment = req.body.comment;
+      const review = req.body.review;
 
       const result = await bookCollection.updateOne(
         { _id: ObjectId(productId) },
-        { $push: { reviews: comment } }
+        { $push: { reviews: review } }
       );
 
       console.log(result);
 
       if (result.modifiedCount !== 1) {
-        console.error("Product not found or comment not added");
-        res.json({ error: "Product not found or comment not added" });
+        console.error("Product not found or review not added");
+        res.json({ error: "Product not found or review not added" });
         return;
       }
 
-      res.json({ message: "Comment added successfully" });
+      res.json({ message: "review added successfully" });
     });
 
     // get a review

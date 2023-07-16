@@ -19,7 +19,7 @@ export default function ProductReview({ id }: IProps) {
     refetchOnMountOrArgChange: true,
     pollingInterval: 30000,
   });
-  const [postComment, { isLoading, isError, isSuccess }] =
+  const [postReview, { isLoading, isError, isSuccess }] =
     usePostReviewMutation();
 
   console.log('loading', isLoading);
@@ -28,14 +28,13 @@ export default function ProductReview({ id }: IProps) {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(inputValue);
 
     const options = {
       id: id,
-      data: { comment: inputValue },
+      data: { review: inputValue },
     };
 
-    postComment(options);
+    postReview(options);
     setInputValue('');
   };
 
@@ -59,13 +58,13 @@ export default function ProductReview({ id }: IProps) {
         </Button>
       </form>
       <div className="mt-10">
-        {data?.comments?.map((comment: string, index: number) => (
+        {data?.reviews?.map((review: string, index: number) => (
           <div key={index} className="flex gap-3 items-center mb-5">
             <Avatar>
               <AvatarImage src="https://github.com/shadcn.png" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
-            <p>{comment}</p>
+            <p>{review}</p>
           </div>
         ))}
       </div>

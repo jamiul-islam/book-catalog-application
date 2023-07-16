@@ -23,7 +23,7 @@
 - filtering using publish year - DONE
 - _dynamic search_
 - single book page - DONE
-- write a review
+- write a review - DONE
 
 ##### CRUD
 
