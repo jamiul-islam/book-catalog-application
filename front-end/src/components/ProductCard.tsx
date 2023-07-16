@@ -14,20 +14,26 @@ export default function ProductCard({ product }: IProps) {
   const handleAddProduct = (product: IBook) => {
     // dispatch(addToCart(product));
     toast({
-      description: 'Product Added',
+      description: 'added to wishlist',
     });
   };
   return (
     <div>
-      <div className="rounded-2xl flex flex-col items-start justify-between p-2 overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl hover:scale-[102%] transition-all gap-2">
-        <Link to={`/product-details/${product._id}`} className="w-1/2">
-          <img src={product?.image} className="w-1/2" alt="product" />
-          <h1 className="text-xl font-semibold">{product?.title}</h1>
-        </Link>
+      <div className="pt-4 rounded flex flex-col items-start justify-between p-2 overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl hover:scale-[102%] transition-all gap-2">
+        <div className="mx-auto">
+          <Link to={`/product-details/${product._id}`} className="w-1/2">
+            <img src={product?.image} className="rounded" alt="product" />
+            <p className="font-semibold">{product?.title}</p>
+          </Link>
+        </div>
         <p className="text-sm">Author: {product?.author}</p>
         <p>Rating: {product?.genre}</p>
         <p className="text-sm">Publish Date: {product?.publicationDate}</p>
-        <Button variant="default" onClick={() => handleAddProduct(product)}>
+        <Button
+          variant="default"
+          onClick={() => handleAddProduct(product)}
+          className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-200 rounded shadow"
+        >
           Add to wishlist
         </Button>
       </div>

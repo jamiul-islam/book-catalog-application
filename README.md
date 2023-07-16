@@ -15,15 +15,23 @@
 ##### landing page
 
 - random 10 data in every refresh - DONE
-- fix single card design
+- fix single card design - DONE
 
 ##### all books page
 
 - store --> data --> UI
-- dynamic search
 - filtering using regex
+- dynamic search
 
-##### cart --> wishlist
+##### CRUD
+
+- create a new book
+- update a book
+- delete a book
+
+## BONUS
+
+##### wishlist
 
 - pending in product card --> button <--
 - future read
