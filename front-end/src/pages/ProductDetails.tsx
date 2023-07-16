@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 export default function ProductDetails() {
   const { id } = useParams();
 
-  const { data: product, isLoading } = useSingleProductQuery(id);
+  const { data: product } = useSingleProductQuery(id);
 
   return (
     <>

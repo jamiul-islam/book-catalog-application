@@ -31,8 +31,6 @@
 - update a book
 - delete a book
 
-## BONUS
-
 ##### wishlist
 
 - --> button <-- add to wishlist helper function for cards and details page

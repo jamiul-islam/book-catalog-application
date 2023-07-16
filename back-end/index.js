@@ -46,8 +46,6 @@ const run = async () => {
         { $push: { reviews: review } }
       );
 
-      console.log(result);
-
       if (result.modifiedCount !== 1) {
         console.error("Product not found or review not added");
         res.json({ error: "Product not found or review not added" });
