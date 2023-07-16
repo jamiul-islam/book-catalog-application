@@ -74,15 +74,14 @@ const run = async () => {
     // add a book
     app.post("/books", async (req, res) => {
       const book = req.body;
-
       const result = await bookCollection.insertOne(book);
-
       res.send(result);
     });
 
     // delete a book
     app.delete("/books/:id", async (req, res) => {
       const id = req.params.id;
+
       const result = await bookCollection.deleteOne({ _id: ObjectId(id) });
       res.send(result);
     });
