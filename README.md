@@ -36,7 +36,6 @@ server link: <https://book-catalog-lucifer1112k.vercel.app>
 
 ##### wishlist
 
-- --> button <-- add to wishlist helper function for cards and details page
-- future read
-- currently reading
-- bookmark icon --> finished
+- add to wishlist - DONE
+- finished read - DONE
+- pending reading - DONE

@@ -14,6 +14,7 @@ import { useAppDispatch, useAppSelector } from '@/redux/hook';
 import { signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 import { setUser } from '@/redux/features/user/userSlice';
+import Cart from '@/components/Cart';
 
 export default function Navbar() {
   const { user } = useAppSelector((state) => state.user);
@@ -48,9 +49,7 @@ export default function Navbar() {
                 </Button>
               </li>
               <li>
-                <Button variant="ghost">
-                  <HiOutlineSearch size="25" />
-                </Button>
+                <Cart />
               </li>
               <li className="ml-5">
                 <DropdownMenu>
